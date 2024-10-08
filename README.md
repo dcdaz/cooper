@@ -64,7 +64,7 @@ This action creates *build* dir if it doesn't exists and then will compile *Coop
 This action executes unit tests for *Cooper*
 
 ```bash
-./build_and_test test.sh
+./build_and_test.sh test
 ```
 
 ##### clean

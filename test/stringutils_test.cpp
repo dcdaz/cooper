@@ -1,5 +1,5 @@
-#define CATCH_CONFIG_MAIN
-#include "catch2/catch.hpp"
+#include "catch2/catch_amalgamated.hpp"
+#include "catch2/catch_amalgamated.cpp"
 #include <cstdarg> // Import due to va_* functions from formatString
 #include "../src/stringutils.cpp"
 
@@ -22,7 +22,7 @@ TEST_CASE("Should split some string by ':' and return a vector of strings") {
     string initialString = "Hello:World";
     vector<string> expectedValues {"Hello", "World"};
     vector<string> currentValues = splitString(initialString, ':');
-    for (int i = 0; i < currentValues.size(); i++) {
+    for (int i = 0; i < (int) currentValues.size(); i++) {
         REQUIRE(currentValues[i] == expectedValues[i]);
     }
 }
@@ -31,7 +31,7 @@ TEST_CASE("Should split some string by '~' and return a vector of strings") {
     string initialString = "John~Doe";
     vector<string> expectedValues {"John", "Doe"};
     vector<string> currentValues = splitString(initialString, '~');
-    for (int i = 0; i < currentValues.size(); i++) {
+    for (int i = 0; i < (int) currentValues.size(); i++) {
         REQUIRE(currentValues[i] == expectedValues[i]);
     }
 }
