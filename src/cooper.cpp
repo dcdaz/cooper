@@ -5,8 +5,10 @@
  * @author Daniel Córdova A.
  */
 
+#include <vector>
 #include "cooper.hpp"
 #include "connection.cpp"
+#include "stringutils.hpp"
 
 class Cooper {
 

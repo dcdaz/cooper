@@ -3,7 +3,7 @@
  * 
  * @author Daniel Córdova A.
  */
-#include <sstream>
+#include <iostream>
 #include <string.h>
 #include <vector>
 #include <sqlite3.h>
@@ -102,7 +102,7 @@ void deleteToDo(Cooper *cooper, string toDoName) {
 }
 
 void printResults(vector<ToDo> toDoList) {
-    for (int i = 0; i < toDoList.size(); i++) {
+    for (int i = 0; i < (int) toDoList.size(); i++) {
         printf("Name:        %s\n", toDoList[i].name.c_str());
         printf("Description: %s\n\n", toDoList[i].description.c_str());
     }

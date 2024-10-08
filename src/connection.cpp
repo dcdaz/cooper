@@ -5,9 +5,9 @@
  * @author Daniel Córdova A.
  */
 
-#include <iostream>
 #include <sqlite3.h>
 #include <tuple>
+#include "stringutils.hpp"
 
 using namespace std;
 
